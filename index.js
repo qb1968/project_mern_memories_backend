@@ -18,7 +18,9 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
-
+app.get('/' (req,res) => {
+  res.send('Hello memories API')
+})
 
 const PORT = process.env.PORT|| 5000;
 
